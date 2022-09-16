@@ -1,5 +1,7 @@
 const galleryItems = [
-    { id: 1, path: 'images/goat_small.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 }
+    { id: 1, title: 'Happy Togs', description: 'Murph and Bon in the wild', path: 'images/mbfieldrun.JPG', likes: 0},
+    { id: 2, title: 'A Very Good Boy', description: 'Big Murph waiting for you to throw the ball', path: 'images/bigmurph.JPG', likes: 0},
+    { id: 3, title: 'Tennis Ball Time', description: 'Bon Bon destroying a tennis ball', path: 'images/lilb.JPG', likes: 0}
 ];
 
 module.exports = galleryItems;
