@@ -13,7 +13,7 @@ function App() {
     // NO SERVER SO SKIP
     // display it on the DOM with .map ???
 
-    axios.get
+    
   
   return (
       <div className="App">
