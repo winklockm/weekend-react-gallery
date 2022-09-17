@@ -10,31 +10,22 @@ import axios from 'axios';
 
 function GalleryItem({item, getData}) {
 
-const [likeCount, setLikeCount] = useState(0)
-
 const handleLike = (id) => {
-    console.log(`in handleLike. for ${id} the like count is ${item.likes}`);
-    setLikeCount(likeCount + 1);
     axios({
         method: 'PUT',
-        url: '/gallery/like/:id',
-        data: {
-            likes: 2,
-        }
+        url: `/gallery/like/${id}`,
     }).then((response) => {
         getData();
     }).catch((error) => {
         console.log('Handle Like PUT request not working:', error);
     })
 }
-console.log(`for item ${item.id} the likes are: ${item.likes}`)
 return (
     <div className="photoCard">
         <img src={item.path} />
         <p>Title: {item.title}</p>
         <button onClick={() => handleLike(item.id)}>LIKE!</button>
         <p>{item.likes} people like this</p>
-
     </div>
 );
 
