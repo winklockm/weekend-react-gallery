@@ -35,10 +35,9 @@ function GalleryList({gallery, getData} ) {
                     return (
                         <GalleryItem
                             key={item.id}
-                            title={item.title}
-                            description={item.description}
-                            path={item.path}
-                            likes={item.likes} />
+                            item={item}
+                            getData={getData}
+                        />
                     )
                 })}
             </ul>
