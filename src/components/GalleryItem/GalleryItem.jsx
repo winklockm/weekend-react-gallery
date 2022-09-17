@@ -5,7 +5,7 @@
 //     - When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
 //     - Update the gallery each time a like button is clicked.
 
-function GalleryItem() {
+function GalleryItem({key, title, description, path, likes}) {
 
 
 // PUT ROUTE
