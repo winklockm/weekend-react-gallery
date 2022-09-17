@@ -19,9 +19,6 @@ import GalleryItem from '../GalleryItem/GalleryItem';
 
 
 
-
-
-
 // STEP 1
 function GalleryList({gallery, getData} ) {
     // STEP 4

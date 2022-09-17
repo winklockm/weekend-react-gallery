@@ -1,3 +1,4 @@
+import { useState} from 'react';
 import axios from 'axios';
 
 // pass in the individual gallery item via `props`. 
@@ -9,28 +10,30 @@ import axios from 'axios';
 
 function GalleryItem({item, getData}) {
 
-const handleLike = () => {
+const [likeCount, setLikeCount] = useState(0)
+
+const handleLike = (id) => {
+    console.log(`in handleLike. for ${id} the like count is ${item.likes}`);
+    setLikeCount(likeCount + 1);
     axios({
         method: 'PUT',
-        url: '/gallery/${item.id}'
+        url: '/gallery/like/:id',
+        data: {
+            likes: 2,
+        }
     }).then((response) => {
         getData();
     }).catch((error) => {
-        console.log('handleLike not working due to:', error)
+        console.log('Handle Like PUT request not working:', error);
     })
 }
-// PUT ROUTE
-
-
-
-
-
-
+console.log(`for item ${item.id} the likes are: ${item.likes}`)
 return (
     <div className="photoCard">
-        <p>photo goes here</p>
-        <button onClick={handleLike}>LIKE!</button>
-        <p>0 people like this</p>
+        <img src={item.path} />
+        <p>Title: {item.title}</p>
+        <button onClick={() => handleLike(item.id)}>LIKE!</button>
+        <p>{item.likes} people like this</p>
 
     </div>
 );
