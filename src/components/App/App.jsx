@@ -41,14 +41,19 @@ function App() {
       console.log('getData not working due to:', error);
     })
   }
+  // confirming that STEP 5 is the array:
+  console.log('this is the gallery variable:', gallery);
+
+
+
 
   return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        {/* // STEP 3 from GalleryList.jsx */}
-        <GalleryList />
+        {/* STEP 3 from GalleryList.jsx */}
+        <GalleryList gallery={gallery} getData={getData}/>
       </div>
     );
 }

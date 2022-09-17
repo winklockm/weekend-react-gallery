@@ -4,3 +4,24 @@
 //     - Display the number likes for each item and include a like button.
 //     - When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
 //     - Update the gallery each time a like button is clicked.
+
+function GalleryItem() {
+
+
+// PUT ROUTE
+
+
+
+
+
+
+return (
+    <>
+        <p>return something from GalleryItem</p>
+        <button>LIKE!</button>
+    </>
+);
+
+}
+
+export default GalleryItem;
