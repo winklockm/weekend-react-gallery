@@ -26,24 +26,29 @@ function GalleryList({gallery, getData} ) {
     
     return (
         <>
-        {/* //STEP 5 */}
-            <ul>
-                {gallery.map(item => {
-                    return (
-                        <GalleryItem
-                            key={item.id}
-                            item={item}
-                            getData={getData}
-                        />
-                    )
-                })}
-            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* //STEP 5 */}
+          <div className='grid'>
+          {gallery.map(item => (
+              <GalleryItem key={item.id} item={item} getData={getData} />
+          ))}
+          </div>
         </>
-      
-
-
-    );
-    
+    )
 }
 
 export default GalleryList;
+
+
+ 

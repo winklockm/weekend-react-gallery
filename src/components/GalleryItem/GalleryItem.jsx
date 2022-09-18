@@ -30,12 +30,24 @@ const handleLike = (id) => {
     })
 }
 return (
-    <div className="photoCard">
-        {(description === false) ? <img src={item.path} onClick={showDescription}/> : 
-        <p onClick={showDescription}>{item.description}</p>}
-        <button onClick={() => handleLike(item.id)}>LIKE!</button>
-        <p>{item.likes} people like this</p>
+    <div className='grid'>        
+        <div className='flex1'>
+                {(description === false)? 
+                    <div>
+                        <img className="photo" src={item.path} onClick={showDescription}/> 
+                    </div>
+                    : 
+                    <div className='description'>
+                        <p onClick={showDescription}>{item.description}</p>
+                    </div>
+                }
+            </div>    
+            <div className='flex2'>
+                <button onClick={() => handleLike(item.id)}>LIKE!</button>
+                <p>{item.likes} people like this</p>   
+            </div>
     </div>
+
 );
 
 }
