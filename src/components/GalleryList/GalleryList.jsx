@@ -19,9 +19,6 @@ import GalleryItem from '../GalleryItem/GalleryItem';
 
 
 
-
-
-
 // STEP 1
 function GalleryList({gallery, getData} ) {
     // STEP 4
@@ -35,10 +32,9 @@ function GalleryList({gallery, getData} ) {
                     return (
                         <GalleryItem
                             key={item.id}
-                            title={item.title}
-                            description={item.description}
-                            path={item.path}
-                            likes={item.likes} />
+                            item={item}
+                            getData={getData}
+                        />
                     )
                 })}
             </ul>
