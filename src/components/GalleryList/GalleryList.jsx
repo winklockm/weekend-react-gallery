@@ -26,18 +26,6 @@ function GalleryList({gallery, getData} ) {
     
     return (
         <>
-
-
-
-
-
-
-
-
-
-
-
-
           {/* //STEP 5 */}
           <div className='grid'>
           {gallery.map(item => (

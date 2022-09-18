@@ -37,14 +37,14 @@ return (
                         <img className="photo" src={item.path} onClick={showDescription}/> 
                     </div>
                     : 
-                    <div className='description'>
-                        <p onClick={showDescription}>{item.description}</p>
+                    <div className='description' onClick={showDescription}>
+                        <p className='descriptionText'>{item.description}</p>
                     </div>
                 }
             </div>    
-            <div className='flex2'>
-                <button onClick={() => handleLike(item.id)}>LIKE!</button>
-                <p>{item.likes} people like this</p>   
+            <div className='likes'>
+                <button onClick={() => handleLike(item.id)}>🖤</button>
+                <p className='likeText'>{item.likes} LIKES</p>   
             </div>
     </div>
 

@@ -1,12 +1,18 @@
+body {
+  background-color: #023047;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #222;
   padding: 1em;
   color: white;
   margin-bottom: 1em;
+  background-color: #FFB703;
+  letter-spacing: 3px;
 }
 
 .App-title {
@@ -16,7 +22,23 @@
 button {
   font-size: 20px;
   margin: 5px;
-  background-color: lightseagreen;
+  background-color: #FFB703;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 1px 1px 1px rgb(23, 108, 136);
+  border-color:#d9e4e9;
+}
+
+button:hover {
+  font-size: 20px;
+  margin: 5px;
+  background-color: #f0d799;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color:#d9e4e9;
+  box-shadow: 1px 1px 1px rgb(23, 108, 136);
 }
 
 
@@ -30,34 +52,34 @@ img {
   text-align: center;
   height: 350px;
   width: 250px;
+  padding: 10px;
 }
-
-/* .flex-container {
-  background-color: blue;
-  display: inline-block;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 400px;
-  margin: 20px;
-  border-radius: 2%;
-}
-
-.flex1 {
-  background-color: pink;
-  width: 300px;
-  height: 400px;
-}
-
-.flex2 {
-  background-color: greenyellow;
-  width: 300px
-} */
 
 .grid {
   display: inline-block;
-  margin: 50px;
-  background-color: pink;
+  margin: 20px;
+  background-color: #023047;
+}
+
+.flex1 {
+  background-color: #219EBC;
+}
+
+.likes {
+  background-color: #219EBC;
+}
+
+.descriptionText {
+  margin-top: 150px;
+  color: #023047;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.likeText {
+  margin-top: 5px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: white;
 }
