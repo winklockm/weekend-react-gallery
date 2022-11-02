@@ -47,7 +47,7 @@ function App() {
   return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Dogtography by Patrick</h1>
+          <h1 className="App-title">Dogtography</h1>
         </header>
         {/* STEP 3 from GalleryList.jsx */}
         <GalleryList gallery={gallery} getData={getData}/>

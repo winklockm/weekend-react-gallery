@@ -24,6 +24,7 @@ const handleLike = (id) => {
         method: 'PUT',
         url: `/gallery/like/${id}`,
     }).then((response) => {
+        console.log('here is the put response:', response)
         getData();
     }).catch((error) => {
         console.log('Handle Like PUT request not working:', error);
