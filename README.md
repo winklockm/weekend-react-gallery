@@ -8,7 +8,7 @@ This project was my first solo React build. The application is a photo library w
 
 This application also features photography by up-and-coming Twin Cities photographer Patrick Winkle. The photos star my own dogs, Murphy and Bonnie.
 
-## Screenshot
+## Screenshots
 
 ![Photo View](/public/images/Photo%20View.png)
 ![Description View](/public/images/Description%20View.png)
